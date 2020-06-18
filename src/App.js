@@ -1,7 +1,14 @@
 import React from 'react';
 import Home from '../src/Pages/Home';
-import { jsx, Global } from "@emotion/core";
+import Book from '../src/Pages/Book';
+import Header from '../src/component/Header';
+import { Global } from "@emotion/core";
 import {Helmet} from "react-helmet";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
@@ -17,7 +24,19 @@ function App() {
           <meta charSet="utf-8" />
           <title>Nacho Díaz | Developer</title>
       </Helmet>
-      <Home/>
+
+      <Router>
+        <Switch>
+           <Route exact path="/">
+              <Header/>
+              <Home />
+          </Route>
+           <Route exact path="/book">
+              <Header/>
+              <Book />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }

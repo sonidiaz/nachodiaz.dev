@@ -1,8 +1,6 @@
 /** @jsx jsx */
-import React from "react";
 import { jsx, css } from "@emotion/core";
-import { Text, Button, useTheme, IconArrowRight } from "sancho";
-import Typist from "react-typist";
+import { Text, useTheme } from "sancho";
 
 const Hero = () => {
   const theme = useTheme();
@@ -16,9 +14,9 @@ const Hero = () => {
         flex-direction: column;
         overflow: hidden;
         position: relative;
-        background: #e8ebee;
+        background: #DAEEEF;
         ${theme.mediaQueries.sm}{
-          min-height: 304px;
+          min-height: 364px;
         }
       `}
     >
@@ -27,42 +25,21 @@ const Hero = () => {
           paddingTop: "6.5rem",
           paddingLeft: theme.spaces.md,
           paddingRight: theme.spaces.md,
-          marginBottom: "6.5rem",
+          // marginBottom: "6.5rem",
           textAlign: "center",
           color: "black",
           [theme.mediaQueries.sm]: {
             fontSize: "2.5rem",
-            maxWidth: "46rem",
+            maxWidth: "66rem",
           },
         }}
         variant="display2"
       >
-        <Typist
-          css={css`
-            .Cursor {
-              display: inline-block;
-
-              &--blinking {
-                opacity: 1;
-                animation: blink 1s linear infinite;
-                @keyframes blink {
-                  0% {
-                    opacity: 1;
-                  }
-                  50% {
-                    opacity: 0;
-                  }
-                  100% {
-                    opacity: 1;
-                  }
-                }
-              }
-            }
-          `}
-        >
-          Es necesario crear interfaces funcionales y accesibles para todas las personas
-        </Typist>
+        Todas las personas deben ser capaces de interactuar de forma natural con una plataforma tecnológica.
       </Text>
+        <Text>
+          La accesibilidad no puede ser una caracteristica, debe ser una obligación.
+        </Text>
     </div>
   );
 };

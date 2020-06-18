@@ -66,19 +66,21 @@ export const itemJobs = [
 		Version: 'Escritorio',
 		klass_mobile: 'none-mobile',
 		Agencia: 'Raya'
-	},{
-		imagen: 'screen-conotrosojos.png',
-		name: '#conotrosojos',
-		texto:'Campaña que promueve la inclusión de personas ciegas. El sitio es como una entrevista, con preguntas predeterminadas en Youtube.',
-		link:'https://nachodiaz8.com/conotrosojos',
-		video: '',
-		css_video:'',
-		Api: 'Youtube',
-		Backend: 'PHP - MySql',
-		Plug: '',
-		Version: 'Escritorio - móvil',
-		Agencia: 'Raya'
-	},{
+	},
+	// {
+	// 	imagen: 'screen-conotrosojos.png',
+	// 	name: '#conotrosojos',
+	// 	texto:'Campaña que promueve la inclusión de personas ciegas. El sitio es como una entrevista, con preguntas predeterminadas en Youtube.',
+	// 	link:'https://nachodiaz8.com/conotrosojos',
+	// 	video: '',
+	// 	css_video:'',
+	// 	Api: 'Youtube',
+	// 	Backend: 'PHP - MySql',
+	// 	Plug: '',
+	// 	Version: 'Escritorio - móvil',
+	// 	Agencia: 'Raya'
+	// },
+	{
 		imagen: 'screen-puma.png',
 		name: 'Do You | Puma',
 		texto:'Sitio de campaña con diferentes secciones, registro de usuario y con una seccion de tienda de productos.',
@@ -95,7 +97,7 @@ export const itemJobs = [
 	{
 		imagen: 'screen-fgc.png',
 		name: 'Familia de galletas costa',
-		texto:'Sitio corporativo para mostrar los productos de la familia de galletas. <b>* Este sitio no pudo salir a producción ya que se promulgó una ley que no permite este tipo de publicidad.</b>',
+		texto:'Sitio corporativo para mostrar los productos de la familia de galletas.',
 		link:'https://nachodiaz8.com/famila-costa/',
 		video: '',
 		css_video:'no-video',

@@ -1,8 +1,5 @@
 /** @jsx jsx */
-
-import React from "react";
 import { jsx } from "@emotion/core";
-
 import { Text, useTheme, Container } from "sancho";
 
 const Calugas = () => {
@@ -11,11 +8,13 @@ const Calugas = () => {
   return (
     <div
       css={{
-        background: theme.colors.background.tint1,
+        background: theme.colors.background.layer,
         paddingTop: theme.spaces.lg,
         paddingBottom: theme.spaces.lg,
         width: "100%",
+        maxWidth: "850px",
         overflow: "hidden",
+        margin: "0 auto"
       }}
     >
       <Container css={{}}>
@@ -40,14 +39,16 @@ const Calugas = () => {
           }}
         >
           <div>
-            <svg            
+            <svg
               css={{ marginBottom: theme.spaces.md }}
               height="34"
               viewBox="0 0 312 312"
               width="34"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path id="XMLID_107_" d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
+              <path
+                id="XMLID_107_"
+                d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
 		l98.381,27.316c2.65,0.736,6.986,0.736,9.637,0.002l98.68-27.361c2.65-0.735,5.02-3.578,5.264-6.316L281.422,4.98
 		c0.246-2.739-1.805-4.98-4.555-4.98H22.347z M232.049,59.641c-0.219,2.443-0.598,6.684-0.842,9.423l-0.611,6.823
 		c-0.246,2.738-0.596,6.654-0.781,8.701c-0.184,2.048-0.359,3.723-0.391,3.723c-0.031,0-2.307,0-5.057,0h-69.76
@@ -60,12 +61,13 @@ const Calugas = () => {
 		c2.654,0.717,4.836,1.304,4.848,1.304s2.193-0.588,4.848-1.305l27.27-7.369c2.654-0.717,5.027-3.545,5.273-6.283l2.957-32.976
 		c0.246-2.739-1.803-4.98-4.553-4.98h-30.666c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0H80.511c-2.75,0-5.199-2.242-5.443-4.98
 		l-7.256-81.306c-0.244-2.739-0.623-6.979-0.842-9.423c-0.217-2.443,1.854-4.442,4.604-4.442H144.5c2.75,0,5.025,0,5.055,0
-		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"/>
+		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"
+              />
             </svg>
             <Text variant="h4">Frontend</Text>
             <Text>
-              Mi especialidad es el desarrollo el frontend y la UI/UX de las
-              aplicaciones principalmente con ReactJs y VueJs.
+              Desarrollo de interfaces de
+              aplicaciones React | Vue | Angular
             </Text>
           </div>
           <div
@@ -87,12 +89,9 @@ const Calugas = () => {
             </svg>
             <Text variant="h4">Accesibilidad</Text>
             <Text>
-              Con el enfoque bien definido en que la tecnología debe ser
-              accesible para todo tipo de usuario, los proyectos que desarrollo
-              deben tener un alto nivel de accesibilidad.
-            </Text>
+              Las personas con capacidades especiales puedan percibir, comprender y operar nuestro sistema </Text>
           </div>
-          <div>
+          {/* <div>
             <svg
               css={{ marginBottom: theme.spaces.md }}
               xmlns="http://www.w3.org/2000/svg"
@@ -108,9 +107,7 @@ const Calugas = () => {
               distintos de perfiles de dessarrollador necesario. Con
               metodologias agiles llevamos a cabo el proyecto con iteraciones.
             </Text>
-          </div>
-
-          
+          </div> */}
         </div>
       </Container>
     </div>

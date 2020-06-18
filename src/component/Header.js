@@ -1,23 +1,114 @@
-import React from 'react';
-import {Navbar, Toolbar, Container, Text, useTheme} from 'sancho';
+/** @jsx jsx */
+
+import iconLinkedin from "../images/icons/010-linkedin.png";
+import { jsx, css } from "@emotion/core";
+import iconTw from "../images/icons/013-twitter-1.png";
+import iconGit from "../images/icons/github.png";
+import { Navbar, Toolbar, Text, useTheme } from 'sancho';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const theme = useTheme();
-  return ( 
-      <Navbar css={{
-        position: 'absolute',
-        width:100+'%',
-        top:0,
-        left:0
-        
-      }}>
-      <Toolbar>
-        <Container>
-          <Text>This text will have a padding on the left and right</Text>
-        </Container>
+  return (
+    <Navbar
+      css={{
+        position: "relative",
+        boxShadow: "none",
+        background: "#DAEEEF",
+      }}
+    >
+      <Toolbar
+        css={css`
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      `}
+      >
+        <Text
+          variant="h5"
+          css={{
+            alignItems: "center",
+            display: "flex",
+            color: "#000000",
+            padding: "20px",
+            background: "white",
+            boxShadow: "2px 2px 2px 1px #CAE9FF",
+            "a":{
+              color: "black",
+              textDecoration: "none"
+            }
+          }}
+          gutter={false}
+        >
+          <Link to='/'>
+            <span> NachoDíaz</span>
+          </Link>
+        </Text>
+        <div
+          css={{
+            marginLeft: "auto",
+            display: "flex",
+            justifyContent: "space-between",
+            width: "105px",
+            padding: "20px",
+            background: "white",
+            boxShadow: "2px 2px 2px 1px #CAE9FF",
+            "> div": {
+              position: "relative",
+              width: "27px",
+              height: "27px",
+              borderRadius: "50%",
+              "> a": {
+                display: "block",
+                width: "100%",
+                height: "100%",
+                textIndent: "-10000px",
+              },
+            },
+          }}
+        >
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/sonidiaz/"
+              css={{
+                backgroundSize: "cover",
+                backgroundImage: `url(${iconLinkedin})`,
+              }}
+            >
+              Linkedin
+          </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/sonidiaz"
+              rel="noopener noreferrer"
+              target="_blank"
+              css={{
+                backgroundSize: "cover",
+                backgroundImage: `url(${iconGit})`,
+              }}
+            >
+              Github
+          </a>
+          </div>
+          <div>
+            <a
+              href="https://twitter.com/sonidiaz"
+              rel="noopener noreferrer"
+              target="_blank"
+              css={{
+                backgroundSize: "cover",
+                backgroundImage: `url(${iconTw})`,
+              }}
+            >
+              Twitter
+          </a>
+          </div>
+        </div>
       </Toolbar>
     </Navbar>
 
-   );
+  );
 }
- 
+
 export default Header;
