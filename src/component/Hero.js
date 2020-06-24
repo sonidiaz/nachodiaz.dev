@@ -15,30 +15,39 @@ const Hero = () => {
         overflow: hidden;
         position: relative;
         background: #DAEEEF;
-        ${theme.mediaQueries.sm}{
+        padding-bottom: 2.5rem;
+        ${theme.mediaQueries.lg}{
           min-height: 364px;
         }
       `}
     >
       <Text
         css={{
-          paddingTop: "6.5rem",
+          paddingTop: "2.5rem",
           paddingLeft: theme.spaces.md,
           paddingRight: theme.spaces.md,
-          // marginBottom: "6.5rem",
           textAlign: "center",
           color: "black",
-          [theme.mediaQueries.sm]: {
+          fontSize: "1.5rem",
+          maxWidth: "46rem",
+          [theme.mediaQueries.lg]: {
+            paddingTop: "6.5rem",
             fontSize: "2.5rem",
             maxWidth: "66rem",
           },
         }}
-        variant="display2"
+
       >
         Todas las personas deben ser capaces de interactuar de forma natural con una plataforma tecnológica.
       </Text>
-        <Text>
-          La accesibilidad no puede ser una caracteristica, debe ser una obligación.
+        <Text css={{
+          textAlign:"center",
+          width: "80%",
+          maxWidth: "800px",
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
+          La accesibilidad no puede ser una característica, debe ser una obligación.
         </Text>
     </div>
   );

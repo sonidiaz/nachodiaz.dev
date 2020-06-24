@@ -1,18 +1,31 @@
 /** @jsx jsx */
-import heroImage from "../images/adventure-1807524_1920.jpg";
+import { useState, useEffect } from "react";
+import { itemJobs } from "../data";
 import Calugas from "../component/Calugas";
 import Hero from "../component/Hero";
 import { jsx, Global, css } from "@emotion/core";
-import Header from '../component/Header';
 import Jobs from "../component/Jobs";
-import Profile from '../component/Profile';
+import Profile from "../component/Profile";
+import { SocialProfile } from "../component/SocialProfile";
 import Footer from "../component/Footer";
 import { Text, useTheme, Container, Button } from "sancho";
-import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const [jobsShow, setJobShow] = useState({ jobs: [] });
+  const [isLoading, setLoading] = useState(false);
   const theme = useTheme();
-
+  const page = "home";
+  useEffect(() => {
+    let showData = [];
+    page === "home"
+      ? (showData = [itemJobs[0], itemJobs[1]])
+      : (showData = itemJobs);
+    setJobShow({ jobs: showData });
+  }, [page]);
+  const handleShowJob = () => {
+    setLoading({ isLoading: !isLoading });
+    setJobShow({ jobs: itemJobs });
+  };
   return (
     <main>
       <Global
@@ -23,94 +36,78 @@ const Home = () => {
         }}
       />
       <Hero />
-      <div
-        css={css`
-          padding-bottom: ${theme.spaces.xl},
-          width: 100%;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          overflow: hidden;
-          position: relative;
-          
-        // ${theme.mediaQueries.md} {
-        //   background: url(${heroImage});
-        // }
-        `}
-      ></div>
       <Calugas />
-      <Profile/>
+      <Profile />
       <div
-        css={css`
-          width: 100%;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          overflow: hidden;
-          position: relative;
-          background: #62b6cb;
-          margin: 50px auto 0;
-          box-shadow: 3px 2px 2px 3px #cae9ff;
-        `}
+        css={{
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          overflow: "hidden",
+          position: "relative",
+          boxShadow: "3px 2px 2px 3px #daeeef",
+        }
+
+        }
       >
-        <Text
+        <div
           css={{
-            paddingTop: "3.5rem",
-            paddingLeft: theme.spaces.md,
-            paddingRight: theme.spaces.md,
-            // marginBottom: "6.5rem",
-            textAlign: "center",
-            color: theme.colors.background.layer,
-            [theme.mediaQueries.sm]: {
-              fontSize: "2.5rem",
-              maxWidth: "46rem",
+            width: "100%",
+            "> div": {
+              width: "100%",
+              textAlign: "center",
             },
-          }}
-          variant="display2"
-        >
-          Gestión de proyectos digitales
-        </Text>
-        <Text
-          css={{
-            paddingLeft: theme.spaces.md,
-            paddingRight: theme.spaces.md,
-            textAlign: "center",
-            color: theme.colors.background.layer,
-            marginBottom: "3.5rem",
             [theme.mediaQueries.sm]: {
-              fontSize: "1.3rem",
-              maxWidth: "36rem",
+              display: "flex",
+              justifyContent: "space-between",
+              maxWidth: "100%",
+              "> div": {
+                width: "33.3%",
+                borderLeft: "1px solid #daeeef"
+              }
             },
           }}
         >
-          Con metodologias agiles y la colaboración de equipos de
-          desarrolladores deslocalizados.
-        </Text>
+          <div className="container-social-profile">
+            <SocialProfile social="linkedin" link="https://www.linkedin.com/in/sonidiaz/">
+            Si quieres saber más sobre mi experiencia laboral y académica visita mi perfil en Linkedin. No dudes en escribirme si ves opciones de sinergia y colaboración.
+            </SocialProfile>
+          </div>
+          <div className="container-social-profile">
+            <SocialProfile social="github" link="https://github.com/sonidiaz">
+            En Github encontrarás un repositorio con el código de alguno de mis trabajos. Además podrás ver mi lista de favoritos, donde están los proyectos y desarrolladores a los que sigo.
+            </SocialProfile>
+          </div>
+          <div className="container-social-profile">
+            <SocialProfile social="twitter" link="https://twitter.com/sonidiaz">
+            En Twitter suelo compartir noticias sobre accesibilidad, tecnología para humanizar, eventos, meetups.
+            </SocialProfile>
+          </div>
+        </div>
       </div>
       <div
         css={css`
           position: relative;
           text-align: center;
           background: #daeeef;
-          padding: 84px 0 60px;
+          padding: 74px 0 30px;
           h4 {
             color: #62b6cb;
             display: block;
             padding: 20px 0;
             background: white;
-            width: 70%;
             // max-width: 350px;
             margin: 0 auto;
             box-shadow: 3px 2px 2px 3px #cae9ff;
+            width: 80%;
+            ${theme.mediaQueries.sm} {
+              width: 40%;
+            }
           }
         `}
       >
-        <Text variant="h4">
-          Aqui quiero ponder y hacer un nexo con los trabajos que he desarrollado. Pero la mayoria son de agencia, los que tengo del ultimo tiempo estan aqui en <a href="https://github.com/sonidiaz" target="_blank" rel="noopener noreferrer">Github.com</a>. Pero es solo codigo. Estoy pasandolos a algo mas visual pero me va a demorar un rato. Entonces no se como linkear los de gestion de proyectos y mi background laboral
-        </Text>
-        {/* <Text variant="h4">
-          Algunos de los proyectos en los que he participado. En esta recopilación de trabajos no se encusntran los realizados los ultimos años, ya que muchos aun se encustran en fase de desarrollo y me es imposible mostrarlos. Si puedes visiart mi Github donde hay mucho codigo y proyectos, prototipos, pruebas etc que he realizado con los distinotos frameworks
-        </Text> */}
+        <Text variant="h4">PROYECTOS</Text>
       </div>
       <div
         css={{
@@ -120,8 +117,9 @@ const Home = () => {
           width: "100%",
           overflow: "hidden",
         }}
+        id="css-10caf3q-Home"
       >
-       <Container css={{}}>
+        <Container css={{}}>
           <div
             css={{
               display: "block",
@@ -133,6 +131,7 @@ const Home = () => {
               },
               [theme.mediaQueries.lg]: {
                 display: "flex",
+                flexWrap: "wrap",
                 justifyContent: "space-between",
                 "& > div": {
                   margin: theme.spaces.lg,
@@ -140,32 +139,39 @@ const Home = () => {
               },
             }}
           >
-            <Jobs />
+            {jobsShow.jobs.map((job, idx) => (
+              <Jobs key={idx} job={job} />
+            ))}
           </div>
-      <div css={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: "1.5rem"
-      }}>
-        <Button
-          css={{
-            margin: "15px 0",
-            background: "#5FA8D3",
-            borderColor: "#5FA8D3",
-            "a":{
-              color: "white",
-              textDecoration: "none"
-            }
-          }}
-          intent="primary"
-        >
-          <Link to='/book'>
-            Ver otros los proyectos
-          </Link>
-
-         
-        </Button>
-      </div>
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "2.5rem",
+              marginBottom: "2rem",
+            }}
+          >
+            {!isLoading ? (
+              <Button
+                intent="primary"
+                variant="outline"
+                onPress={handleShowJob}
+                loading={isLoading}
+              >
+                OTROS PROYECTOS
+              </Button>
+            ) : (
+                <Button
+                  intent="primary"
+                  variant="outline"
+                  onPress={() => {
+                    window.scroll({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  ¡LLévame arriba!
+                </Button>
+              )}
+          </div>
         </Container>
       </div>
       <Footer />

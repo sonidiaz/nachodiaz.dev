@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { Text, useTheme, Container } from "sancho";
+import { Text, useTheme, Container, Link } from "sancho";
 
 const Calugas = () => {
   const theme = useTheme();
@@ -10,11 +10,10 @@ const Calugas = () => {
       css={{
         background: theme.colors.background.layer,
         paddingTop: theme.spaces.lg,
-        paddingBottom: theme.spaces.lg,
+
         width: "100%",
-        maxWidth: "850px",
         overflow: "hidden",
-        margin: "0 auto"
+        margin: "0 auto",
       }}
     >
       <Container css={{}}>
@@ -28,7 +27,7 @@ const Calugas = () => {
               marginLeft: "auto",
               marginRight: "auto",
             },
-            [theme.mediaQueries.lg]: {
+            [theme.mediaQueries.sm]: {
               display: "flex",
               justifyContent: "space-between",
               "& > div": {
@@ -66,13 +65,12 @@ const Calugas = () => {
             </svg>
             <Text variant="h4">Frontend</Text>
             <Text>
-              Desarrollo de interfaces de
-              aplicaciones React | Vue | Angular
+              Desarrollo de interfaces de usuario <br/> React | Vue | Node
             </Text>
           </div>
           <div
             css={{
-              marginBottom: "0 !important",
+              
               [theme.mediaQueries.md]: {
                 marginBottom: theme.mediaQueries.xl,
               },
@@ -89,9 +87,10 @@ const Calugas = () => {
             </svg>
             <Text variant="h4">Accesibilidad</Text>
             <Text>
-              Las personas con capacidades especiales puedan percibir, comprender y operar nuestro sistema </Text>
+              Con <Link href="https://www.w3.org/TR/wai-aria/" target="_blank">ARIA</Link> es posible hacer más accesibles los productos desarrollados
+            </Text>
           </div>
-          {/* <div>
+          <div>
             <svg
               css={{ marginBottom: theme.spaces.md }}
               xmlns="http://www.w3.org/2000/svg"
@@ -101,13 +100,9 @@ const Calugas = () => {
             >
               <path d="M20 3c0-1.657-1.344-3-3-3s-3 1.343-3 3c0 .312.061.606.149.889l-4.21 3.157c.473.471.878 1.01 1.201 1.599l4.197-3.148c.477.316 1.048.503 1.663.503 1.656 0 3-1.343 3-3zm-2 0c0 .551-.448 1-1 1s-1-.449-1-1 .448-1 1-1 1 .449 1 1zm3 12.062c1.656 0 3-1.343 3-3s-1.344-3-3-3c-1.281 0-2.367.807-2.797 1.938h-6.283c.047.328.08.66.08 1s-.033.672-.08 1h6.244c.396 1.195 1.509 2.062 2.836 2.062zm-1-3c0-.551.448-1 1-1s1 .449 1 1-.448 1-1 1-1-.448-1-1zm-20-.062c0 2.761 2.238 5 5 5s5-2.239 5-5-2.238-5-5-5-5 2.239-5 5zm2 0c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm7.939 4.955l4.21 3.157c-.088.282-.149.576-.149.888 0 1.657 1.344 3 3 3s3-1.343 3-3-1.344-3-3-3c-.615 0-1.186.187-1.662.504l-4.197-3.148c-.324.589-.729 1.127-1.202 1.599zm6.061 4.045c0-.551.448-1 1-1s1 .449 1 1-.448 1-1 1-1-.449-1-1z" />
             </svg>
-            <Text variant="h4">Gestión de proyectos digitales</Text>
-            <Text>
-              Segun el tipo y las necesides tecnicas de proyecto, gestiono los
-              distintos de perfiles de dessarrollador necesario. Con
-              metodologias agiles llevamos a cabo el proyecto con iteraciones.
-            </Text>
-          </div> */}
+            <Text variant="h4">Gestión de proyectos</Text>
+            <Text>De manera ágil con una red de colaboradores remotos</Text>
+          </div>
         </div>
       </Container>
     </div>

@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import { Text, Container, Avatar, Divider } from "sancho";
+import { Text, Container, Avatar, Divider, useTheme } from "sancho";
 import nacho from "../images/nachodiaz.png";
 
 const Profile = () => {
+  const theme = useTheme();
   return (
     <Container
       css={{
@@ -14,10 +15,13 @@ const Profile = () => {
       <div
         css={css`
           position: relative;
-          display: flex;
-          justify-content: space-between;
+          display: block;
           width: 90%;
-          margin: 60px auto 20px;
+          margin: 100px auto 70px;
+          ${theme.mediaQueries.sm}{
+            display: flex;
+            justify-content: space-between;
+          }
         `}
       >
         <Avatar
@@ -36,31 +40,26 @@ const Profile = () => {
             },
           }}
         >
-          <Text variant="paragraph">El desarrollo es interno y externo.</Text>
+          <Text css={{
+            marginBottom: '1em'
+          }} variant="display3">El desarrollo es interno y externo</Text>
           <Text variant="paragraph">
-            Soy Nacho, Frontend Developer, llevo más de 7 años con HTML, CSS y
-            Javascript. He trabajado en agencias de publicidad, como
-            desarrollador independiente y en consultoras tecnológicas, con la
-            fortuna de hacerlo en diferentes ciudades en 2 países distintos.
+            Soy parte de equipos que hacen productos digitales y mi principal función es desarrollar las interfaces de usuario, el rol del frontend developer.
           </Text>
           <Text variant="paragraph">
-            Esto me ha llevado a tener que adaptar mi forma de vida a los
-            cambios propios de vivir en un país distinto, lejos de mi circulo
-            mas cercano y salir constantemente de mi zona de confort, lo que
-            conlleva a muchas satisfacciones y momentos de introspección
-            personal.
+            Llevo varios años colaborando en proyectos, lo he hecho en agencias de publicidad, como
+            desarrollador independiente y en consultoras tecnológicas, en diferentes ciudades de Chile y España lo que me ha permitido experimentar diferentes visiones que me han ayudado en mi desarrollo profesional y personal.
           </Text>
           <Text variant="paragraph">
-            Este tipo de situación nos hace cuestionarnos si lo que hacemos vale
-            la pena o no, si el tiempo y energías que invertimos tienen un
-            propósito real y que valga la pena.
+            Vivir lejos de tu país te enseña que la adaptabilidad al cambio es algo fundamental para la supervivencia.
           </Text>
           <Text variant="paragraph">
-            Esto esto que mi interés personal en el área de la tecnología, está
-            fuertemente dirigido en hacer cada vez mas accesible la web a todos
-            las personas. Independiente de su capacidad de percibir e
-            interactuar con nuestras interfaces. En hacer que la brecha digital
-            para con las personas con capacidades especiales sea cada vez menor.
+          Salir de la zona de confort lleva a muchas satisfacciones y también a muchos cuestionamientos, te preguntas si lo que haces vale la pena o si el tiempo y energías que inviertes tiene un propósito real para tu vida.
+          </Text>
+          <Text variant="paragraph">
+            A raíz de todo lo anterior, mi interés en el área de la tecnología está
+            fuertemente dirigido en ayudar a hacer cada vez más accesible los sitios web, en hacer que la brecha digital
+            para las personas con capacidades especiales sea cada vez menor.
           </Text>
         </div>
       </div>

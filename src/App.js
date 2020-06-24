@@ -22,7 +22,7 @@ function App() {
       />
       <Helmet>
           <meta charSet="utf-8" />
-          <title>Nacho Díaz | Developer</title>
+          <title>Nacho Díaz colaborador en equipos de desarrollo tecnológico</title>
       </Helmet>
 
       <Router>

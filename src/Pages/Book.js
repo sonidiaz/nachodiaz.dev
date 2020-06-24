@@ -1,16 +1,14 @@
 /** @jsx jsx */
 import React from 'react'
-import Header from '../component/Header';
 import Jobs from '../component/Jobs';
-import { jsx, css } from "@emotion/core";
-import { Container, useTheme, Text, Link } from "sancho";
+import { jsx} from "@emotion/core";
+import { Container, useTheme} from "sancho";
 
 const Book = () => {
   const theme = useTheme()
   return (
     <React.Fragment>
-      
-      <div
+      {/* <div
         css={css`
           position: relative;
           text-align: center;
@@ -30,11 +28,7 @@ const Book = () => {
         <Text variant="h4">
           Aqui quiero ponder y hacer un nexo con los trabajos que he desarrollado. Pero la mayoria son de agencia, los que tengo del ultimo tiempo estan aqui en <Link href="#">Gitgub</Link>. Pero es solo codigo. Estoy pasandolos a algo mas visual pero me va a demorar un rato. Entonces no se como linkear los de gestion de proyectos y mi background laboral
         </Text>
-        {/* <Text variant="h4">
-          Algunos de los proyectos en los que he participado. 
-          En esta recopilación de trabajos no se encuentran los realizados los ultimos años, ya que muchos aun se encustran en fase de desarrollo y me es imposible mostrarlos. Si puedes visiart mi Github donde hay mucho codigo y proyectos, prototipos, pruebas etc que he realizado con los distinotos frameworks
-        </Text> */}
-      </div>
+      </div> */}
       <Container css={{
         background: "#DAEEEF",
         width: "100%",
