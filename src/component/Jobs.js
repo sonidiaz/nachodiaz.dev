@@ -104,6 +104,15 @@ const Jobs = ({ job }) => {
                 secondary={job.Backend}
               />
             )}
+            {(
+              <ListItem
+                aria-live="polite"
+                aria-busy="true"
+                interactive={false}
+                primary="Frontend"
+                secondary={job.front}
+              />
+            )}
           </List>
           {job.link && (
             <Button
