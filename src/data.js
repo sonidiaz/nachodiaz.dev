@@ -30,7 +30,7 @@ export const itemJobs = [
 	{
 		imagen: 'site-huawei.jpg',
 		name: 'Huawei | Mate 8',
-		texto:'Para obtener un sitio con dinamismo y movimiento, con la librería TweenMax de Greensock y los elementos visuales de la marca logramos que las transiciones entre las secciones tuviesen animaciones visualmente atractivas.',
+		texto:'Para obtener una pagina con dinamismo y movimiento, con la librería TweenMax de Greensock y los elementos visuales de la marca logramos que las transiciones entre las secciones tuviesen animaciones visualmente atractivas.',
 		link:'https://nachodiaz8.com/hw-p8/',
 		video: '',
 		css_video:'no-video',
