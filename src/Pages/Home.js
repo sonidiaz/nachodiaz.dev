@@ -18,14 +18,21 @@ const Home = () => {
   useEffect(() => {
     let showData = [];
     page === "home"
-      ? (showData = [itemJobs[0], itemJobs[1]])
-      : (showData = itemJobs);
+    ? (showData = [itemJobs[0], itemJobs[1]])
+    : (showData = itemJobs);
     setJobShow({ jobs: showData });
   }, [page]);
   const handleShowJob = () => {
     setLoading({ isLoading: !isLoading });
-    setJobShow({ jobs: itemJobs });
+    setJobShow({ jobs: [...itemJobs] });
   };
+  const renderJobs = (page=0) => {
+    const listaJobs = jobsShow.jobs.map((job, idx) => (
+      <Jobs key={idx} job={job} />
+    ))
+    return listaJobs
+
+  }
   return (
     <main>
       <Global
@@ -139,9 +146,9 @@ const Home = () => {
               },
             }}
           >
-            {jobsShow.jobs.map((job, idx) => (
-              <Jobs key={idx} job={job} />
-            ))}
+            {
+              (renderJobs())
+            }
           </div>
           <div
             css={{

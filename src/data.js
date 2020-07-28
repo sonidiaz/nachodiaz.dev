@@ -12,12 +12,13 @@ export const itemJobs = [
 		Plug: '',
 		Version: 'Escritorio - móvil',
 		Agencia: '',
-		tipo: 'bfg'	
+		tipo: 'bfg'	,
+		date: 'Mayo 2020'
 	},
 	{
 		imagen: 'screen-weather.png',
 		name: 'Weather App',
-		texto:'Aplicación experimental que a través de la API de Open Weather se obtienen los datos del clima de ciudades del mundo y se muestran en diferentes graficas. Tiene filtros, detalle, mapas, etc.',
+		texto:'Aplicación experimental que a través de la API de Open Weather se obtienen los datos del clima de ciudades del mundo y se muestran en diferentes gráficas. Tiene filtros, detalle, mapas, etc.',
 		link:'https://weather-data-app.vercel.app/',
 		video: '',
 		css_video:'',
@@ -27,7 +28,8 @@ export const itemJobs = [
 		Plug: '',
 		Version: 'Escritorio - móvil',
 		Agencia: '',
-		tipo: 'exp'	
+		tipo: 'exp'	,
+		date: 'Mayo 2020'
 	},
 	{
 		imagen: 'site-huawei.jpg',
@@ -43,7 +45,8 @@ export const itemJobs = [
 		Version: 'Escritorio',
 		klass_mobile: 'none-mobile',
 		Agencia: 'Raya',
-		tipo: 'ag'
+		tipo: 'ag',
+		date: 'Junio 2016'
 	},
 	{
 		imagen: 'screen-puma.png',
@@ -59,7 +62,25 @@ export const itemJobs = [
 		Version: 'Escritorio - móvil',
 		klass_mobile: '',
 		Agencia: 'Raya',
-		tipo: 'ag'
+		tipo: 'ag',
+		date: 'Septiembre 2017'
+	},
+	{
+		imagen: 'fullscreen-shopmaster.png',
+		name: 'Shopmaster',
+		texto:'Plataforma ecommerce con Wordpress/WooCommerce para un cliente en Chile gestionado y desarrollado desde España. Se utilizaron Custom post type y Custom taxonomies. Personalización de las páginas listas y detalle de producto, checkout y el home del sitio. 	Desarrollamos componentes autoadministrables. Personalización backend del Dashboard de administración para mostrar datos de la compra, como nombre del cliente, email, Nombre de la empresa, etc. Se generaron las claves SSH privada y pública para la comunicación con la pasarela de pago.',
+		link:'',
+		video: '',
+		css_video:'no-video',
+		Api: '',
+		Backend: 'Wordpress - Woocomerce',
+		front: 'Vanilla JS - Jquery',
+		Plug: '',
+		Version: 'Escritorio - móvil',
+		klass_mobile: '',
+		Agencia: '',
+		tipo: 'wp',
+		date: '2017 - 2018'
 	},
 	{
 		imagen: 'screen-thairoom.jpg',
@@ -74,7 +95,8 @@ export const itemJobs = [
 		Plug: 'Axios',
 		Version: 'Escritorio - móvil',
 		Agencia: '',
-		tipo: 'wp'
+		tipo: 'wp',
+		date: '2019'
 	},
 	{
 		imagen: 'screen-flateli.jpg',
@@ -89,7 +111,8 @@ export const itemJobs = [
 		Plug: '',
 		Version: 'Escritorio - móvil',
 		Agencia: '',
-		tipo: 'wp'
+		tipo: 'wp',
+		date: '2018'
 	},
 	{
 		imagen: 'screen-fgc.png',
@@ -105,7 +128,8 @@ export const itemJobs = [
 		Version: 'Escritorio',
 		klass_mobile: 'none-mobile',
 		Agencia: 'Raya',
-		tipo: 'a'
+		tipo: 'a',
+		date: 'Agosto 2016'
 	},
 	{
 		imagen: 'screen-callao.png',
@@ -120,7 +144,8 @@ export const itemJobs = [
 		Plug: '',
 		Version: 'Escritorio - móvil',
 		Agencia: '',
-		tipo: 'wp'
+		tipo: 'wp',
+		date: '2017'
 	},
 	{
 		imagen: 'screen-nomascuentos.png',
@@ -136,6 +161,7 @@ export const itemJobs = [
 		Version: 'Escritorio - móvil',
 		klass_mobile: '',
 		Agencia: 'Carcavilla Boutique',
-		tipo: 'ag'
+		tipo: 'ag',
+		date: 'Diciembre 2016'
 	}
 ]

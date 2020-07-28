@@ -1,7 +1,11 @@
 /** @jsx jsx */
 import {useEffect, useRef} from 'react';
+import { isMobile } from '../helpers/mobileDetect';
 import { jsx, css } from "@emotion/core";
-import { useTheme, Text, Layer, List, ListItem, Button } from "sancho";
+import { useTheme, Text, Layer, List, ListItem, Button, Avatar } from "sancho";
+import reactIcon from "../images/icons/react.png";
+import vueIcon from "../images/icons/vue.png";
+import jsIcon from "../images/icons/javascript.png";
 
 const Jobs = ({ job }) => {
   const theme = useTheme();
@@ -11,6 +15,36 @@ const Jobs = ({ job }) => {
   useEffect(() => {
     (divRef.current.id === 'site-huawei') && document.getElementById(divRef.current.id).scrollIntoView({behavior: "smooth"});
   }, [])
+
+  const getIconFron = (front) => {
+    switch (front) {
+      case 'React':
+        return reactIcon
+      case 'Vue':
+        return vueIcon
+      default:
+        return jsIcon
+    }
+  }
+  const renderButton = (job) => {
+    if(job.imagen === "screen-fgc.png" && isMobile.any()) {
+      return ''
+    }else{
+      return (
+        <Button
+          css={{
+            margin: "15px 0",
+            background: "#5FA8D3",
+            borderColor: "#5FA8D3",
+          }}
+          intent="primary"
+          onPress={() => window.open(`${job.link}`, "_blank")}
+        >
+          Ver Proyecto
+        </Button>
+      )
+    }
+  }
   return (
     <div
       css={{
@@ -46,11 +80,11 @@ const Jobs = ({ job }) => {
           }}
         >
           <div
-            css={css`
-              width: 100%;
-              height: auto;
-              overflow: hidden;
-            `}
+            css={{
+              width: "100%",
+              height: "auto",
+              overflow: "hidden"
+            }}
           >
             <img
               alt=""
@@ -60,7 +94,9 @@ const Jobs = ({ job }) => {
               src={require(`../images/jobs/${job.imagen}`)}
             />
           </div>
-          <Text variant="h5">{job.name}</Text>
+          <Text variant="h5">{job.name} <small css={{
+            fontSize: ".6em"
+          }}>({job.date})</small> </Text>
           <Text variant="subtitle">{job.texto}</Text>
           <List
             css={css`
@@ -109,23 +145,19 @@ const Jobs = ({ job }) => {
                 aria-live="polite"
                 aria-busy="true"
                 interactive={false}
-                primary="Frontend"
-                secondary={job.front}
+                primary={`Frontend: ${job.front}`}
+                contentAfter={
+                  <Avatar 
+                    css={{
+                      backgroundColor: "#ffffff"
+                    }}
+                   src={getIconFron(job.front)} />
+                }
               />
             )}
           </List>
           {job.link && (
-            <Button
-              css={{
-                margin: "15px 0",
-                background: "#5FA8D3",
-                borderColor: "#5FA8D3",
-              }}
-              intent="primary"
-              onPress={() => window.open(`${job.link}`, "_blank")}
-            >
-              Ver Proyecto
-            </Button>
+            renderButton(job)
           )}
         </Layer>
       </div>

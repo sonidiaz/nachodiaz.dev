@@ -17,7 +17,7 @@ window.addEventListener('message', event => {
   } 
 }); 
 // if (module.hot && process.env.NODE_ENV==="development") {
-  // module.hot.accept();
+//   module.hot.accept();
 ReactDOM.render(
   <React.StrictMode>
     <App />
