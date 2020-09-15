@@ -63,7 +63,7 @@ const Calugas = () => {
 		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"
               />
             </svg>
-            <Text variant="h4">Frontend</Text>
+            <Text variant="h4">Frontend / UI / JavaScript</Text>
             <Text>
               Desarrollo de interfaces de usuario <br/> React | Vue | Node
             </Text>

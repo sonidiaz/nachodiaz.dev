@@ -21,26 +21,6 @@ const Header = () => {
         padding-right: 0 !important;
       `}
       >
-        <Text
-          variant="h5"
-          css={{
-            alignItems: "center",
-            display: "flex",
-            color: "#000000",
-            padding: "20px",
-            background: "white",
-            boxShadow: "2px 2px 2px 1px #CAE9FF",
-            "a":{
-              color: "black",
-              textDecoration: "none"
-            }
-          }}
-          gutter={false}
-        >
-          <Link to='/'>
-            <span> NachoDíaz</span>
-          </Link>
-        </Text>
         <div
           css={{
             marginLeft: "auto",
