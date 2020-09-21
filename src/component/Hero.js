@@ -2,7 +2,17 @@
 import { jsx, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import { Text, useTheme } from "sancho";
-import imgAccesible from '../images/iconuser2.png'
+import imgAccesible0 from "../images/user-icon-1.png";
+import imgAccesible1 from "../images/user-icon-2.png";
+import imgAccesible2 from "../images/user-icon-3.png";
+import imgAccesible3 from "../images/user-icon-4.png";
+
+const images = {
+  0: imgAccesible0,
+  1: imgAccesible1,
+  2: imgAccesible2,
+  3: imgAccesible3,
+};
 
 const Hero = () => {
   const theme = useTheme();
@@ -20,7 +30,7 @@ const Hero = () => {
       flex-direction: row;
       justify-content: center;
     },
-  `)
+  `);
   const Section = styled.section(`
     width: 80%;
     margin: 0 auto;
@@ -47,21 +57,24 @@ const Hero = () => {
       display: none;
       ${theme.mediaQueries.lg}{
         display: block;
-        width: 60%;
+        width: 69%;
         max-width: 250px;
         margin: 0 auto;
-        filter: invert(0.6);
+        filter: grayscale(1);
       }
     }
-  `)
-
+  `);
+  const getImageHero = () => {
+    const imgRandom = Math.floor(Math.random() * 3);
+    return images[imgRandom];
+  };
   return (
     <div
       css={css`
         width: 100%;
         overflow: hidden;
         position: relative;
-        background: #DAEEEF;
+        background: #daeeef;
         padding-bottom: 5.5rem;
         padding-top: 2.5rem;
       `}
@@ -82,26 +95,28 @@ const Hero = () => {
                 paddingTop: "0",
                 fontSize: "4.5rem",
                 maxWidth: "66rem",
-              }
+              },
             }}
-
           >
-           NACHO DÍAZ
+            NACHO DÍAZ
           </Text>
           <Text
             variant="h5"
             css={{
-              textAlign: "right"
+              textAlign: "right",
+              fontWeight: "300",
             }}
           >
-          Colaborador en equipos de desarrollo tecnológico para crear proyectos digitales accesibles con el foco siempre en el usuario.
-
+            Colaborador en <b>equipos de desarrollo tecnológico.</b> Creando
+            proyectos digitales poniendo el foco siempre en el usuario.
           </Text>
         </Section>
-        <Section css={{
-          width: "49% !important"
-        }}>
-          <img src={imgAccesible} alt=""/>
+        <Section
+          css={{
+            width: "49% !important",
+          }}
+        >
+          <img src={getImageHero()} alt="" />
         </Section>
       </Wrapper>
     </div>

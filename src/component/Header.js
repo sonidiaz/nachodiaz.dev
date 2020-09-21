@@ -4,8 +4,7 @@ import { jsx, css } from "@emotion/core";
 import iconTw from "../images/icons/013-twitter-1.png";
 import iconLinkedin from "../images/icons/010-linkedin.png";
 import iconGit from "../images/icons/github.png";
-import { Navbar, Toolbar, Text } from 'sancho';
-import { Link } from 'react-router-dom';
+import { Navbar, Toolbar} from 'sancho';
 const Header = () => {
   return (
     <Navbar
