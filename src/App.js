@@ -27,7 +27,7 @@ function App() {
 
       <Router>
         <Switch>
-           <Route exact path="/nachodiaz">
+           <Route exact path="/nachodiaz/build">
               <Header/>
               <Home />
           </Route>
