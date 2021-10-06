@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "/nachodiaz/static/js/main.272dbea6.chunk.js",
+    "main.js.map": "/nachodiaz/static/js/main.272dbea6.chunk.js.map",
+    "runtime-main.js": "/nachodiaz/static/js/runtime-main.124359c5.js",
+    "runtime-main.js.map": "/nachodiaz/static/js/runtime-main.124359c5.js.map",
+    "static/js/2.c7acdaad.chunk.js": "/nachodiaz/static/js/2.c7acdaad.chunk.js",
+    "static/js/2.c7acdaad.chunk.js.map": "/nachodiaz/static/js/2.c7acdaad.chunk.js.map",
+    "index.html": "/nachodiaz/index.html",
+    "precache-manifest.bfeb4580e3ab8bcf108127a09cfba83f.js": "/nachodiaz/precache-manifest.bfeb4580e3ab8bcf108127a09cfba83f.js",
+    "service-worker.js": "/nachodiaz/service-worker.js",
+    "static/js/2.c7acdaad.chunk.js.LICENSE.txt": "/nachodiaz/static/js/2.c7acdaad.chunk.js.LICENSE.txt",
+    "static/media/010-linkedin.png": "/nachodiaz/static/media/010-linkedin.fa719f42.png",
+    "static/media/013-twitter-1.png": "/nachodiaz/static/media/013-twitter-1.f4ab5cc1.png",
+    "static/media/fullscreen-shopmaster.png": "/nachodiaz/static/media/fullscreen-shopmaster.7201b891.png",
+    "static/media/github.png": "/nachodiaz/static/media/github.9c8ba612.png",
+    "static/media/nachodiazv2.png": "/nachodiaz/static/media/nachodiazv2.26739d10.png",
+    "static/media/screen-bfg-community.png": "/nachodiaz/static/media/screen-bfg-community.fac6f676.png",
+    "static/media/screen-bfg.png": "/nachodiaz/static/media/screen-bfg.b787180c.png",
+    "static/media/screen-callao.png": "/nachodiaz/static/media/screen-callao.e97be41b.png",
+    "static/media/screen-conotrosojos.png": "/nachodiaz/static/media/screen-conotrosojos.05b98810.png",
+    "static/media/screen-fgc.png": "/nachodiaz/static/media/screen-fgc.87db7adf.png",
+    "static/media/screen-flateli.jpg": "/nachodiaz/static/media/screen-flateli.39d12779.jpg",
+    "static/media/screen-nomascuentos.png": "/nachodiaz/static/media/screen-nomascuentos.5533d2f9.png",
+    "static/media/screen-puma.png": "/nachodiaz/static/media/screen-puma.365b5f58.png",
+    "static/media/screen-thairoom.jpg": "/nachodiaz/static/media/screen-thairoom.a9898add.jpg",
+    "static/media/screen-weather.png": "/nachodiaz/static/media/screen-weather.a4bf2034.png",
+    "static/media/site-huawei.jpg": "/nachodiaz/static/media/site-huawei.c3aa59e2.jpg",
+    "static/media/user-icon-1.png": "/nachodiaz/static/media/user-icon-1.583121f9.png",
+    "static/media/user-icon-2.png": "/nachodiaz/static/media/user-icon-2.6eec91f2.png",
+    "static/media/user-icon-3.png": "/nachodiaz/static/media/user-icon-3.923ddf5b.png",
+    "static/media/user-icon-4.png": "/nachodiaz/static/media/user-icon-4.cd9dc26c.png",
+    "static/media/wordpress.png": "/nachodiaz/static/media/wordpress.7ba18244.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.124359c5.js",
+    "static/js/2.c7acdaad.chunk.js",
+    "static/js/main.272dbea6.chunk.js"
+  ]
+}
