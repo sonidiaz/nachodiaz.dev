@@ -4,15 +4,14 @@ import { jsx, css } from "@emotion/core";
 import iconTw from "../images/icons/013-twitter-1.png";
 import iconLinkedin from "../images/icons/010-linkedin.png";
 import iconGit from "../images/icons/github.png";
-import { Navbar, Toolbar, Text } from 'sancho';
-import { Link } from 'react-router-dom';
+import { Navbar, Toolbar} from 'sancho';
 const Header = () => {
   return (
     <Navbar
       css={{
         position: "relative",
         boxShadow: "none",
-        background: "#DAEEEF",
+        background: "#87A8C1",
       }}
     >
       <Toolbar
@@ -21,26 +20,6 @@ const Header = () => {
         padding-right: 0 !important;
       `}
       >
-        <Text
-          variant="h5"
-          css={{
-            alignItems: "center",
-            display: "flex",
-            color: "#000000",
-            padding: "20px",
-            background: "white",
-            boxShadow: "2px 2px 2px 1px #CAE9FF",
-            "a":{
-              color: "black",
-              textDecoration: "none"
-            }
-          }}
-          gutter={false}
-        >
-          <Link to='/'>
-            <span> NachoDíaz</span>
-          </Link>
-        </Text>
         <div
           css={{
             marginLeft: "auto",
@@ -49,7 +28,7 @@ const Header = () => {
             width: "105px",
             padding: "20px",
             background: "white",
-            boxShadow: "2px 2px 2px 1px #CAE9FF",
+            boxShadow: "2px 2px 2px 1px #465f71",
             "> div": {
               position: "relative",
               width: "27px",

@@ -1,62 +1,69 @@
 /** @jsx jsx */
-import {useEffect, useRef} from 'react';
-import { isMobile } from '../helpers/mobileDetect';
+import { useEffect, useRef } from "react";
+import { isMobile } from "../helpers/mobileDetect";
 import { jsx, css } from "@emotion/core";
 import { useTheme, Text, Layer, List, ListItem, Button, Avatar } from "sancho";
 import reactIcon from "../images/icons/react.png";
 import vueIcon from "../images/icons/vue.png";
+import wordpressIcon from "../images/icons/wordpress.png";
 import jsIcon from "../images/icons/javascript.png";
 
 const Jobs = ({ job }) => {
   const theme = useTheme();
   const divRef = useRef(null);
-  let id = job.imagen.replace(/[ .jpg | .png]/gi, '');
+  let id = job.imagen.replace(/[ .jpg | .png]/gi, "");
 
   useEffect(() => {
-    (divRef.current.id === 'site-huawei') && document.getElementById(divRef.current.id).scrollIntoView({behavior: "smooth"});
-  }, [])
+    divRef.current.id === "site-huawei" &&
+      document
+        .getElementById(divRef.current.id)
+        .scrollIntoView({ behavior: "smooth" });
+  }, []);
 
   const getIconFron = (front) => {
     switch (front) {
-      case 'React':
-        return reactIcon
-      case 'Vue':
-        return vueIcon
+      case "React":
+        return reactIcon;
+      case "Vue":
+        return vueIcon;
+      case "Wordpress":
+        return wordpressIcon;
       default:
-        return jsIcon
+        return jsIcon;
     }
-  }
+  };
   const renderButton = (job) => {
-    if(job.imagen === "screen-fgc.png" && isMobile.any()) {
-      return ''
-    }else{
+    if (job.imagen === "screen-fgc.png" && isMobile.any()) {
+      return "";
+    } else {
       return (
         <Button
           css={{
             margin: "15px 0",
-            background: "#5FA8D3",
-            borderColor: "#5FA8D3",
+            background: "#465f71",
+            borderColor: "#465f71",
           }}
           intent="primary"
           onPress={() => window.open(`${job.link}`, "_blank")}
         >
           Ver Proyecto
         </Button>
-      )
+      );
     }
-  }
+  };
   return (
     <div
       css={{
         marginBottom: "0 !important",
-        background: "#DAEEEF",
+        background: "#465f71",
         width: "90%",
         [theme.mediaQueries.sm]: {
           width: "44%",
-        }
+        },
       }}
-    id={id}
-    ref={divRef} >
+      id={id}
+      ref={divRef}
+    >
       <div
         css={css`
           position: relative;
@@ -83,7 +90,7 @@ const Jobs = ({ job }) => {
             css={{
               width: "100%",
               height: "auto",
-              overflow: "hidden"
+              overflow: "hidden",
             }}
           >
             <img
@@ -94,9 +101,9 @@ const Jobs = ({ job }) => {
               src={require(`../images/jobs/${job.imagen}`)}
             />
           </div>
-          <Text variant="h5">{job.name} <small css={{
-            fontSize: ".6em"
-          }}>({job.date})</small> </Text>
+          <Text variant="h5">
+            {job.name}{" "}
+          </Text>
           <Text variant="subtitle">{job.texto}</Text>
           <List
             css={css`
@@ -115,13 +122,6 @@ const Jobs = ({ job }) => {
                 secondary={job.Api}
               />
             )}
-            <ListItem
-              aria-live="polite"
-              aria-busy="true"
-              interactive={false}
-              primary="Versión"
-              secondary={job.Version}
-            />
             {job.Plug && (
               <ListItem
                 aria-live="polite"
@@ -140,25 +140,23 @@ const Jobs = ({ job }) => {
                 secondary={job.Backend}
               />
             )}
-            {(
+            {
               <ListItem
                 aria-live="polite"
                 aria-busy="true"
                 interactive={false}
-                primary={`Frontend: ${job.front}`}
                 contentAfter={
-                  <Avatar 
+                  <Avatar
                     css={{
-                      backgroundColor: "#ffffff"
+                      backgroundColor: "#ffffff",
                     }}
-                   src={getIconFron(job.front)} />
+                    src={getIconFron(job.front)}
+                  />
                 }
               />
-            )}
+            }
           </List>
-          {job.link && (
-            renderButton(job)
-          )}
+          {job.link && renderButton(job)}
         </Layer>
       </div>
     </div>

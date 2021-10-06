@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { useState, useEffect } from "react";
 import { itemJobs } from "../data";
-import Calugas from "../component/Calugas";
 import Hero from "../component/Hero";
 import { jsx, Global, css } from "@emotion/core";
 import Jobs from "../component/Jobs";
@@ -9,6 +8,7 @@ import Profile from "../component/Profile";
 import { SocialProfile } from "../component/SocialProfile";
 import Footer from "../component/Footer";
 import { Text, useTheme, Container, Button } from "sancho";
+import Calugas from "../component/Calugas";
 
 const Home = () => {
   const [jobsShow, setJobShow] = useState({ jobs: [] });
@@ -20,7 +20,7 @@ const Home = () => {
     page === "home"
     ? (showData = [itemJobs[0], itemJobs[1]])
     : (showData = itemJobs);
-    setJobShow({ jobs: showData });
+    setJobShow({ jobs: [...itemJobs] });
   }, [page]);
   const handleShowJob = () => {
     setLoading({ isLoading: !isLoading });
@@ -43,17 +43,18 @@ const Home = () => {
         }}
       />
       <Hero />
-      <Calugas />
       <Profile />
+      
+      <Calugas/>
       <div
         css={{
           width: "100%",
-          display: "flex",
+          display: "none",
           alignItems: "center",
           flexDirection: "column",
           overflow: "hidden",
           position: "relative",
-          boxShadow: "3px 2px 2px 3px #daeeef",
+          boxShadow: "3px 2px 2px 3px #465f71",
         }
 
         }
@@ -71,7 +72,7 @@ const Home = () => {
               maxWidth: "100%",
               "> div": {
                 width: "33.3%",
-                borderLeft: "1px solid #daeeef"
+                borderLeft: "1px solid #465f71"
               }
             },
           }}
@@ -97,16 +98,16 @@ const Home = () => {
         css={css`
           position: relative;
           text-align: center;
-          background: #daeeef;
+          background: #465f71;
           padding: 74px 0 30px;
           h4 {
-            color: #62b6cb;
+            color: #465f71;
             display: block;
             padding: 20px 0;
             background: white;
             // max-width: 350px;
             margin: 0 auto;
-            box-shadow: 3px 2px 2px 3px #cae9ff;
+            box-shadow: 3px 2px 2px 3px #465f71;
             width: 80%;
             ${theme.mediaQueries.sm} {
               width: 40%;
@@ -114,17 +115,16 @@ const Home = () => {
           }
         `}
       >
-        <Text variant="h4">PROYECTOS</Text>
+        <Text variant="h4">ÚLTIMOS PROYECTOS</Text>
       </div>
       <div
         css={{
-          background: "#DAEEEF",
+          background: "#465f71",
           paddingTop: theme.spaces.lg,
           paddingBottom: theme.spaces.lg,
           width: "100%",
           overflow: "hidden",
         }}
-        id="css-10caf3q-Home"
       >
         <Container css={{}}>
           <div
@@ -158,7 +158,7 @@ const Home = () => {
               marginBottom: "2rem",
             }}
           >
-            {!isLoading ? (
+            {isLoading ? (
               <Button
                 intent="primary"
                 variant="outline"
@@ -169,13 +169,11 @@ const Home = () => {
               </Button>
             ) : (
                 <Button
-                  intent="primary"
-                  variant="outline"
                   onPress={() => {
-                    window.scroll({ top: 0, behavior: "smooth" });
+                    window.open('https://github.com/sonidiaz', '_blank');
                   }}
                 >
-                  ¡LLévame arriba!
+                  Más proyectos en Github
                 </Button>
               )}
           </div>
