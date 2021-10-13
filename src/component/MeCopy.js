@@ -11,7 +11,7 @@ const MeCopy = () => {
       marginLeft: 'auto',
       marginRight: 'auto',
     }}>
-    He participado en proyectos en publicidad, como independiente y en consultoría en <b>Chile y España</b>. 
+    Entre Chile y España he sumado 15 años de experiencia colaborando con distintos especialistas en tecnología, comunicación digital, Marketing  e impulsado siempre proyectos propios que amplíen nuestros horizonte. 
     </Text>
   );
 };

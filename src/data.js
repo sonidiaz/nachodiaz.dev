@@ -50,7 +50,7 @@ export const itemJobs = [
 	{
 		imagen: 'screen-bfg.png',
 		name: 'Beforget Sonrisa',
-		texto:'Reconocimiento facial en el navegador web, el video se activa cuando reconocoe la sonrisa del usuario',
+		texto:'Reconocimiento facial en el navegador web, el video se activa cuando detecta la sonrisa del usuario',
 		link:'https://www.beforget.com/sonrisa/',
 		video: '',
 		css_video:'',

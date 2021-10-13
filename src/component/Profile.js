@@ -15,7 +15,7 @@ const Profile = () => {
         css={css`
           position: relative;
           display: block;
-          width: 100%;
+          width: 70%;
           margin: 100px auto 0;
           ${theme.mediaQueries.sm}{
             display: flex;
@@ -23,8 +23,6 @@ const Profile = () => {
           }
         `}
       >
-        
-
         <div
           css={{
             width: "100%",
@@ -33,12 +31,16 @@ const Profile = () => {
             },
             [theme.mediaQueries.sm]: {
               width: "30%",
-              display: "flex",
+              display: "block",
               alignItems: "center"
             },
           }}
         >
-          
+          <Container css={{
+              display: "block",
+              alignItems: "center",
+              padding: "0 !important"
+            }}>
           <Avatar
               css={{
                 marginRight: "auto",
@@ -49,6 +51,15 @@ const Profile = () => {
               name="Nacho Díaz"
               size="xl"
             />
+
+          
+              <Text variant="h4" css={{
+                textAlign: 'center',
+                fontSize: "2,5em",
+                fontWeight: "200"
+              }}>NACHO DÍAZ</Text>
+             
+            </Container>
         </div>
         <Container css={{
           width: "100%",
@@ -56,23 +67,20 @@ const Profile = () => {
             width: "70%"
           },
         }}>
-          <Container css={{
-            display: "flex",
-            alignItems: "center",
-            padding: "0 !important"
-          }}>
-            <Text variant="display2" css={{
-              textAlign: 'left',
-              fontSize: "4,5em",
-              fontWeight: "200"
-            }}>NACHO DÍAZ</Text>
-           
-          </Container>
           <Text variant="paragraph" css={{
             marginBottom: '1em',
             textAlign: 'left',
           }}>
-            Ayudo a impulsar proyectos que tengan un beneficio en el <b> bien común </b>y el <b> medio ambiente</b>. El producto o servicio donde invirtamos nuestro tiempo y dinero debe ir en dirección de mejorar alguno de los <b>17 Objetivos de desarrollo sostenible</b>, así nos aseguramos de que nuestros esfuerzos contribuyen de alguna manera en hacer una sociedad más equitativa y sostenible.</Text>
+            Ayudo a impulsar proyectos que tengan un beneficio en el <b> bien común de todos quienes habitan este planeta.</b> 
+            
+            </Text>
+          <Text variant="paragraph" css={{
+            marginBottom: '1em',
+            textAlign: 'left',
+          }}>
+           El producto o servicio donde invirtamos nuestro tiempo y dinero debe ir en dirección de mejorar alguno de los <b>17 objetivos de desarrollo sostenible,</b> así nos aseguramos de que nuestros esfuerzos contribuyen de alguna manera, en hacer una sociedad más equitativa y sostenible.
+            
+            </Text>
         </Container>
       </div>
       <div

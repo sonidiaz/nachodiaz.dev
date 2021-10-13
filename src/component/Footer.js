@@ -18,8 +18,6 @@ const Footer = () => {
         "> div": {
           "> a": {
             display: "block",
-            width: "100%",
-            height: "100%",
           },
         },
       }}
@@ -85,9 +83,14 @@ const Footer = () => {
         css={{
           width: "100%",
           marginTop: "20px",
+          display: "flex",
+          justifyContent: "center",
           "a": {
             textDecoration: "none",
             color: "grey",
+            width: "15%",
+            maxWidth: "170px",
+            height: "30px",
             "&:hover":{
               textDecoration: "underline"
             }
@@ -96,7 +99,11 @@ const Footer = () => {
       >
         <a href="https://www.freepik.es/vectores/personas" rel="noopener noreferrer" target="_blank"
           >
-          Vector de Personas creado por freepik - www.freepik.es
+          Freepik - Personas
+        </a>
+        <a href="https://www.freepik.es/vectores/fondos" rel="noopener noreferrer" target="_blank"
+          >
+          Freepik - Fondos
         </a>
       </div>
     </div>

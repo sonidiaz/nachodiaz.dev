@@ -6,21 +6,21 @@ import { Text, useTheme } from "sancho";
 import Typist from 'react-typist';
 import imgAccesible0 from "../images/user-icon-1.png";
 import imgAccesible1 from "../images/user-icon-2.png";
-import imgAccesible2 from "../images/user-icon-3.png";
-import imgAccesible3 from "../images/user-icon-4.png";
+// import imgAccesible2 from "../images/user-icon-3.png";
+import imgAccesible2 from "../images/nature-icon-1.png";
 
 const images = {
   0: imgAccesible0,
   1: imgAccesible1,
   2: imgAccesible2,
-  3: imgAccesible3,
+
 };
 
 
 const Hero = () => {
   const [textHeroChange, setTextHero] = useState('para el emprendimiento social.');
   const theme = useTheme();
-  const textos = ['para el medio ambiente.', 'centrados en el usuario.']
+  const textos = ['equitativos y sostenibles.','para las personas y el medio ambiente.']
   const Wrapper = styled.div(`
     position: relative;
     padding-top: 0;
@@ -28,7 +28,7 @@ const Hero = () => {
     max-width: 66rem;
     ${theme.mediaQueries.md} {
       width: 100%;
-      max-width: 740px;
+      max-width: 640px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -87,7 +87,7 @@ const Hero = () => {
   `);
 
   const getImageHero = () => {
-    const imgRandom = Math.floor(Math.random() * 4);
+    const imgRandom = Math.floor(Math.random() * 3);
     return images[imgRandom];
   };
   useEffect(() => {
@@ -123,7 +123,7 @@ const Hero = () => {
               color: "white"
             }}
           >
-          Colaboro en diseño y desarrollo <b> creando proyectos tecnológicos</b> 
+          Colaboro en diseño y desarrollo para <b> proyectos tecnológicos</b> 
             <b>
               <Typist>
               {textHeroChange}
