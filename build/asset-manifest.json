@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/nachodiaz/build/static/js/main.b7498278.chunk.js",
-    "main.js.map": "/nachodiaz/build/static/js/main.b7498278.chunk.js.map",
+    "main.js": "/nachodiaz/build/static/js/main.a8e311f7.chunk.js",
+    "main.js.map": "/nachodiaz/build/static/js/main.a8e311f7.chunk.js.map",
     "runtime-main.js": "/nachodiaz/build/static/js/runtime-main.8be1fd3c.js",
     "runtime-main.js.map": "/nachodiaz/build/static/js/runtime-main.8be1fd3c.js.map",
-    "static/js/2.c7acdaad.chunk.js": "/nachodiaz/build/static/js/2.c7acdaad.chunk.js",
-    "static/js/2.c7acdaad.chunk.js.map": "/nachodiaz/build/static/js/2.c7acdaad.chunk.js.map",
+    "static/js/2.8d7421f7.chunk.js": "/nachodiaz/build/static/js/2.8d7421f7.chunk.js",
+    "static/js/2.8d7421f7.chunk.js.map": "/nachodiaz/build/static/js/2.8d7421f7.chunk.js.map",
     "index.html": "/nachodiaz/build/index.html",
-    "precache-manifest.92df53a6ac63ec25026638f953e025e1.js": "/nachodiaz/build/precache-manifest.92df53a6ac63ec25026638f953e025e1.js",
+    "precache-manifest.f7324ce80460724d4ec4f4cd1555841c.js": "/nachodiaz/build/precache-manifest.f7324ce80460724d4ec4f4cd1555841c.js",
     "service-worker.js": "/nachodiaz/build/service-worker.js",
-    "static/js/2.c7acdaad.chunk.js.LICENSE.txt": "/nachodiaz/build/static/js/2.c7acdaad.chunk.js.LICENSE.txt",
+    "static/js/2.8d7421f7.chunk.js.LICENSE.txt": "/nachodiaz/build/static/js/2.8d7421f7.chunk.js.LICENSE.txt",
     "static/media/010-linkedin.png": "/nachodiaz/build/static/media/010-linkedin.fa719f42.png",
     "static/media/013-twitter-1.png": "/nachodiaz/build/static/media/013-twitter-1.f4ab5cc1.png",
     "static/media/fullscreen-shopmaster.png": "/nachodiaz/build/static/media/fullscreen-shopmaster.7201b891.png",
     "static/media/github.png": "/nachodiaz/build/static/media/github.9c8ba612.png",
     "static/media/nachodiazv2.png": "/nachodiaz/build/static/media/nachodiazv2.26739d10.png",
+    "static/media/nature-icon-1.png": "/nachodiaz/build/static/media/nature-icon-1.edaea53b.png",
     "static/media/screen-bfg-community.png": "/nachodiaz/build/static/media/screen-bfg-community.fac6f676.png",
     "static/media/screen-bfg.png": "/nachodiaz/build/static/media/screen-bfg.b787180c.png",
     "static/media/screen-callao.png": "/nachodiaz/build/static/media/screen-callao.e97be41b.png",
@@ -28,13 +29,11 @@
     "static/media/site-huawei.jpg": "/nachodiaz/build/static/media/site-huawei.c3aa59e2.jpg",
     "static/media/user-icon-1.png": "/nachodiaz/build/static/media/user-icon-1.583121f9.png",
     "static/media/user-icon-2.png": "/nachodiaz/build/static/media/user-icon-2.6eec91f2.png",
-    "static/media/user-icon-3.png": "/nachodiaz/build/static/media/user-icon-3.923ddf5b.png",
-    "static/media/user-icon-4.png": "/nachodiaz/build/static/media/user-icon-4.cd9dc26c.png",
     "static/media/wordpress.png": "/nachodiaz/build/static/media/wordpress.7ba18244.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8be1fd3c.js",
-    "static/js/2.c7acdaad.chunk.js",
-    "static/js/main.b7498278.chunk.js"
+    "static/js/2.8d7421f7.chunk.js",
+    "static/js/main.a8e311f7.chunk.js"
   ]
 }

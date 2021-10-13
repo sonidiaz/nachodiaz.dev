@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7bb725d6b199c515eebba069c83e33a",
+    "revision": "b81f14b9155f4a2dd2f69183b3db7b1b",
     "url": "/nachodiaz/build/index.html"
   },
   {
-    "revision": "5fba3ee5abe311c28394",
-    "url": "/nachodiaz/build/static/js/2.c7acdaad.chunk.js"
+    "revision": "f50968c3abf2a2e644fe",
+    "url": "/nachodiaz/build/static/js/2.8d7421f7.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/nachodiaz/build/static/js/2.c7acdaad.chunk.js.LICENSE.txt"
+    "url": "/nachodiaz/build/static/js/2.8d7421f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7cfc221d0c278c562606",
-    "url": "/nachodiaz/build/static/js/main.b7498278.chunk.js"
+    "revision": "8f4a10a19b51cff717a3",
+    "url": "/nachodiaz/build/static/js/main.a8e311f7.chunk.js"
   },
   {
     "revision": "b1715071aa3905bf8ab1",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "26739d10bfc0fabd1a89bdb20933bbe1",
     "url": "/nachodiaz/build/static/media/nachodiazv2.26739d10.png"
+  },
+  {
+    "revision": "edaea53b5645316c788a2671d1ebf2f9",
+    "url": "/nachodiaz/build/static/media/nature-icon-1.edaea53b.png"
   },
   {
     "revision": "fac6f67669cb223609306ebf4834968c",
@@ -90,14 +94,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6eec91f2da64db4c276f16c6b182e965",
     "url": "/nachodiaz/build/static/media/user-icon-2.6eec91f2.png"
-  },
-  {
-    "revision": "923ddf5b03635c121e20316953269497",
-    "url": "/nachodiaz/build/static/media/user-icon-3.923ddf5b.png"
-  },
-  {
-    "revision": "cd9dc26cc78539339885c933be18710b",
-    "url": "/nachodiaz/build/static/media/user-icon-4.cd9dc26c.png"
   },
   {
     "revision": "7ba182448a9aabfbab4fcd0bcafb0d6c",
