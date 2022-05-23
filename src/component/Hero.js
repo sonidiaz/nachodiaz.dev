@@ -20,7 +20,7 @@ const images = {
 const Hero = () => {
   const [textHeroChange, setTextHero] = useState('para el emprendimiento social.');
   const theme = useTheme();
-  const textos = ['equitativos y sostenibles.','para las personas y el medio ambiente.']
+  const textos = ['equitativos y sostenibles.','para formentar el aprendizaje']
   const Wrapper = styled.div(`
     position: relative;
     padding-top: 0;
@@ -107,9 +107,9 @@ const Hero = () => {
         width: 100%;
         overflow: hidden;
         position: relative;
-        background: #87A8C1;
-        padding-bottom: 5.5rem;
-        padding-top: 2.5rem;
+        background: #495371;
+        padding-bottom: 4.5rem;
+        padding-top: 0.5rem;
       `}
     >
       <Wrapper>

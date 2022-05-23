@@ -1,17 +1,14 @@
 /** @jsx jsx */
 
 import { jsx, css } from "@emotion/core";
-import iconTw from "../images/icons/013-twitter-1.png";
-import iconLinkedin from "../images/icons/010-linkedin.png";
-import iconGit from "../images/icons/github.png";
-import { Navbar, Toolbar} from 'sancho';
+import { Navbar, Toolbar, IconLinkedin, IconGithub, IconTwitter} from 'sancho';
 const Header = () => {
   return (
     <Navbar
       css={{
         position: "relative",
         boxShadow: "none",
-        background: "#87A8C1",
+        background: "#495371",
       }}
     >
       <Toolbar
@@ -27,8 +24,6 @@ const Header = () => {
             justifyContent: "space-between",
             width: "105px",
             padding: "20px",
-            background: "white",
-            boxShadow: "2px 2px 2px 1px #465f71",
             "> div": {
               position: "relative",
               width: "27px",
@@ -38,7 +33,6 @@ const Header = () => {
                 display: "block",
                 width: "100%",
                 height: "100%",
-                textIndent: "-10000px",
               },
             },
           }}
@@ -48,25 +42,17 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/sonidiaz/"
-              css={{
-                backgroundSize: "cover",
-                backgroundImage: `url(${iconLinkedin})`,
-              }}
             >
-              Linkedin
-          </a>
+              <IconLinkedin color="white" />
+              </a>
           </div>
           <div>
             <a
               href="https://github.com/sonidiaz"
               rel="noopener noreferrer"
               target="_blank"
-              css={{
-                backgroundSize: "cover",
-                backgroundImage: `url(${iconGit})`,
-              }}
             >
-              Github
+            <IconGithub color="white"/>
           </a>
           </div>
           <div>
@@ -74,12 +60,8 @@ const Header = () => {
               href="https://twitter.com/sonidiaz"
               rel="noopener noreferrer"
               target="_blank"
-              css={{
-                backgroundSize: "cover",
-                backgroundImage: `url(${iconTw})`,
-              }}
             >
-              Twitter
+              <IconTwitter color="white"/>
           </a>
           </div>
         </div>

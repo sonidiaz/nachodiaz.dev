@@ -43,9 +43,23 @@ const Home = () => {
         }}
       />
       <Hero />
+      <Calugas/>
       <Profile />
       
-      <Calugas/>
+
+      {/* <Container>
+        <div css={{padding: "60px 0"}}>
+          <Text variant="h6" css={{
+                textAlign: 'center',
+                width: "80%",
+                maxWidth: "550px",
+                marginLeft: 'auto',
+                marginRight: 'auto',
+              }}>
+              Entre Chile y España he sumado 15 años de experiencia colaborando con distintos especialistas en tecnología, comunicación digital, Marketing  e impulsado siempre proyectos propios que amplíen nuestros horizonte. 
+              </Text>
+          </div>
+      </Container> */}
       <div
         css={{
           width: "100%",
@@ -99,15 +113,12 @@ const Home = () => {
           position: relative;
           text-align: center;
           background: #465f71;
-          padding: 74px 0 30px;
+          padding: 44px 0 30px;
           h4 {
             color: #465f71;
             display: block;
-            padding: 20px 0;
-            background: white;
-            // max-width: 350px;
+            color: white;
             margin: 0 auto;
-            box-shadow: 3px 2px 2px 3px #465f71;
             width: 80%;
             ${theme.mediaQueries.sm} {
               width: 40%;
@@ -115,7 +126,7 @@ const Home = () => {
           }
         `}
       >
-        <Text variant="h4">ÚLTIMOS PROYECTOS</Text>
+        <Text variant="h4">PROYECTOS</Text>
       </div>
       <div
         css={{

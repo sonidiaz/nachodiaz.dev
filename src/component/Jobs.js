@@ -58,7 +58,10 @@ const Jobs = ({ job }) => {
         background: "#465f71",
         width: "90%",
         [theme.mediaQueries.sm]: {
-          width: "44%",
+          width: "49%",
+        },
+        [theme.mediaQueries.md]: {
+          width: "29%",
         },
       }}
       id={id}

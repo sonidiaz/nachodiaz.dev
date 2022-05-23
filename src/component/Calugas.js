@@ -8,23 +8,21 @@ const Calugas = () => {
   return (
     <div
       css={{
-        background: theme.colors.background.layer,
+        background: "#74959A",
         width: "100%",
         overflow: "hidden",
-        margin: "0 auto 100px auto",
+        margin: "0 auto",
+        padding: "60px 0"
       }}
     >
-    <Divider></Divider>
     <Container css={{
       }}>
         <div
           css={{
             display: "block",
             textAlign: "center",
-            marginTop: "5em",
-            marginBottom: "5em",
+            padding: "1.5rem 0",
             "& > div": {
-              marginBottom: theme.spaces.xl,
               maxWidth: "30rem",
               marginLeft: "auto",
               marginRight: "auto",
@@ -35,7 +33,7 @@ const Calugas = () => {
           }}
         >
           <div>
-            <svg
+            {/* <svg
               css={{ marginBottom: theme.spaces.md }}
               height="34"
               viewBox="0 0 312 312"
@@ -59,14 +57,14 @@ const Calugas = () => {
 		l-7.256-81.306c-0.244-2.739-0.623-6.979-0.842-9.423c-0.217-2.443,1.854-4.442,4.604-4.442H144.5c2.75,0,5.025,0,5.055,0
 		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"
               />
-            </svg>
-            <Text variant="h4">Web / UI / Code & NoCode </Text>
-            <Text>
+            </svg> */}
+            <Text css={{color: "white"}} variant="h4">Web / UI / Code & NoCode </Text>
+            <Text css={{color: "white"}}>
               Desarrollo de sitios y plataformas web CMS Wordpress, frontend y backend personalizados, integración y automatización de servicios con y sin código (NoCode).<br/>
             </Text>
           </div>
           <div>
-            <svg
+            {/* <svg
               css={{ marginBottom: theme.spaces.md }}
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -74,26 +72,11 @@ const Calugas = () => {
               viewBox="0 0 24 24"
             >
               <path d="M20 3c0-1.657-1.344-3-3-3s-3 1.343-3 3c0 .312.061.606.149.889l-4.21 3.157c.473.471.878 1.01 1.201 1.599l4.197-3.148c.477.316 1.048.503 1.663.503 1.656 0 3-1.343 3-3zm-2 0c0 .551-.448 1-1 1s-1-.449-1-1 .448-1 1-1 1 .449 1 1zm3 12.062c1.656 0 3-1.343 3-3s-1.344-3-3-3c-1.281 0-2.367.807-2.797 1.938h-6.283c.047.328.08.66.08 1s-.033.672-.08 1h6.244c.396 1.195 1.509 2.062 2.836 2.062zm-1-3c0-.551.448-1 1-1s1 .449 1 1-.448 1-1 1-1-.448-1-1zm-20-.062c0 2.761 2.238 5 5 5s5-2.239 5-5-2.238-5-5-5-5 2.239-5 5zm2 0c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm7.939 4.955l4.21 3.157c-.088.282-.149.576-.149.888 0 1.657 1.344 3 3 3s3-1.343 3-3-1.344-3-3-3c-.615 0-1.186.187-1.662.504l-4.197-3.148c-.324.589-.729 1.127-1.202 1.599zm6.061 4.045c0-.551.448-1 1-1s1 .449 1 1-.448 1-1 1-1-.449-1-1z" />
-            </svg>
-            <Text variant="h4">Gestión de proyectos</Text>
-            <Text>De forma ágil con la metodología OKR y una red de colaboradores <b> hacemos </b>productos y servicios tecnológicos.</Text>
+            </svg> */}
+            <Text css={{color: "white"}} variant="h4">Gestión de proyectos</Text>
+            <Text css={{color: "white"}}>De forma ágil con la metodología OKR y una red de colaboradores <b> hacemos </b>productos y servicios tecnológicos.</Text>
           </div>
         </div>
-        <div>
-        <Divider></Divider>
-        <Text variant="h6" css={{
-              marginBottom: '1em',
-              marginTop: '4em',
-              textAlign: 'center',
-              width: "80%",
-              maxWidth: "550px",
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}>
-            Entre Chile y España he sumado 15 años de experiencia colaborando con distintos especialistas en tecnología, comunicación digital, Marketing  e impulsado siempre proyectos propios que amplíen nuestros horizonte. 
-            </Text>
-        </div>
-
       </Container>
     </div>
   );
