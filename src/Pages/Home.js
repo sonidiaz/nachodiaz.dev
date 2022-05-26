@@ -150,9 +150,9 @@ const Home = () => {
               [theme.mediaQueries.lg]: {
                 display: "flex",
                 flexWrap: "wrap",
-                justifyContent: "space-between",
+                justifyContent: "center",
                 "& > div": {
-                  margin: theme.spaces.lg,
+                  margin: '10px',
                 },
               },
             }}

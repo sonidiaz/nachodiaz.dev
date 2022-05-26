@@ -11,6 +11,7 @@ const Footer = () => {
         justifyContent: "center",
         width: "100%",
         padding: "20px",
+        boxSizing: "border-box",
         "> div": {
           position: "relative",
           width: "27px",

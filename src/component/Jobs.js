@@ -42,6 +42,7 @@ const Jobs = ({ job }) => {
             margin: "15px 0",
             background: "#465f71",
             borderColor: "#465f71",
+            fontSize: "12px"
           }}
           intent="primary"
           onPress={() => window.open(`${job.link}`, "_blank")}
@@ -61,7 +62,7 @@ const Jobs = ({ job }) => {
           width: "49%",
         },
         [theme.mediaQueries.md]: {
-          width: "29%",
+          width: "31%",
         },
       }}
       id={id}
@@ -144,7 +145,7 @@ const Jobs = ({ job }) => {
               />
             )}
             {
-              <ListItem
+              /* <ListItem
                 aria-live="polite"
                 aria-busy="true"
                 interactive={false}
@@ -156,7 +157,7 @@ const Jobs = ({ job }) => {
                     src={getIconFron(job.front)}
                   />
                 }
-              />
+              /> */
             }
           </List>
           {job.link && renderButton(job)}

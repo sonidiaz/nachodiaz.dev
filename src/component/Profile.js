@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { Text, Container, Avatar, Divider, useTheme } from 'sancho';
+import { Text, Container, Avatar, useTheme } from 'sancho';
 import nacho2 from '../images/nachodiazv2.png';
 
 const Profile = () => {
@@ -93,6 +93,14 @@ const Profile = () => {
           >
            En Chile empecé desarrollando campañas digitales en agencias de publicidad, después en Barcelona y Madrid he trabajado en consultoría y como desarrollador independiente.
           </Text>
+          <Text 
+            variant='paragraph'
+            css={{
+              marginBottom: '1em',
+              textAlign: 'left',
+            }}>
+            Todos estos años y lugares en lo que he vivido, me han traído muchas satisfacciones y también muchos cuestionamientos, me he preguntado si lo que hago vale la pena o si el tiempo y energías que invierto tiene un propósito real para mi vida.
+          </Text>
           <Text
             variant='paragraph'
             css={{
@@ -100,7 +108,7 @@ const Profile = () => {
               textAlign: 'left',
             }}
           >
-            Hoy, post pandemia y las ventajas del trabajo en remoto, compagino la vida de pueblo cómo es sembrar mi propia comida o cortar los troncos para la chimenea con el desarrollo de productos digitales. 
+            Hoy, post pandemia y con las ventajas del trabajo en remoto, compagino la vida de pueblo y sus beneficios (traquilidad, naturaleza, etc) con el desarrollo de productos digitales. 
             
           </Text>
           <Text

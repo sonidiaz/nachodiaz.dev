@@ -20,7 +20,7 @@ const images = {
 const Hero = () => {
   const [textHeroChange, setTextHero] = useState('para el emprendimiento social.');
   const theme = useTheme();
-  const textos = ['equitativos y sostenibles.','para formentar el aprendizaje']
+  const textos = ['para el bien común.','que fomenten el aprendizaje.']
   const Wrapper = styled.div(`
     position: relative;
     padding-top: 0;
@@ -114,7 +114,16 @@ const Hero = () => {
     >
       <Wrapper>
         <Section>
-          
+          <Text variant="uppercase" css={{
+              textAlign: "right",
+              fontWeight: "100",
+              color: "white",
+              fontSize: "30px",
+              lineHeight: "50px",
+              [theme.mediaQueries.lg]: {
+                fontSize: "50px",
+              },
+            }}>Desarrollo productos digitales</Text>
           <Text
             variant="h5"
             css={{
@@ -123,7 +132,7 @@ const Hero = () => {
               color: "white"
             }}
           >
-          Colaboro en diseño y desarrollo para <b> proyectos tecnológicos</b> 
+         
             <b>
               <Typist>
               {textHeroChange}
